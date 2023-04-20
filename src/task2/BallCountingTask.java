@@ -6,15 +6,13 @@ import java.util.Scanner;
 
 public class BallCountingTask {
     public static void main(String[] args) {
-
         Map<String, Integer> box = new HashMap<>();
         //Filling the box with different balls
         fillBox(box);
 
         //Finding which balls are the most
         int removedCounter = getSmallestCountOfDifferentBalls(box);
-        System.out.println(removedCounter);
-
+        System.out.println("Least removed balls number: " + removedCounter);
     }
 
     private static void fillBox(Map<String, Integer> box) {
@@ -25,7 +23,7 @@ public class BallCountingTask {
             String[] tokens = input.split(":\\s+");
             String color = tokens[0];
             int countOfBalls = Integer.parseInt(tokens[1]);
-
+// It is also good to check, if the color exists from a list of colors or Enum.
             if (countOfBalls < 1) {
                 continue;
             }
@@ -51,7 +49,6 @@ public class BallCountingTask {
             }
             count += box.get(entry.getKey());
         }
-
         return count;
     }
 
@@ -61,6 +58,5 @@ public class BallCountingTask {
             return;
         }
         box.put(color, box.get(color) + count);
-
     }
 }
