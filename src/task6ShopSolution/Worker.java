@@ -1,4 +1,4 @@
-package task6;
+package task6ShopSolution;
 
 public abstract class Worker {
     public Shop workingShop = Shop.getInstance();

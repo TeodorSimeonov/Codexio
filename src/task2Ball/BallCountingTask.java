@@ -1,4 +1,4 @@
-package task2;
+package task2Ball;
 
 import java.util.HashMap;
 import java.util.Map;

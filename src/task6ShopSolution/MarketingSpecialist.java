@@ -1,4 +1,4 @@
-package task6;
+package task6ShopSolution;
 
 public class MarketingSpecialist extends Worker {
     private double budget;

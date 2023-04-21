@@ -1,4 +1,4 @@
-package task6;
+package task6ShopSolution;
 
 public class SalesConsultant extends Worker {
     private double earnedMoney;

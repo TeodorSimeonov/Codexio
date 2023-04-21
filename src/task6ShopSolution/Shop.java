@@ -1,4 +1,4 @@
-package task6;
+package task6ShopSolution;
 
 import java.util.ArrayList;
 import java.util.List;
