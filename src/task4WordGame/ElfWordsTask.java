@@ -61,5 +61,4 @@ public class ElfWordsTask {
         System.out.println(differentLetters1.length() + differentLetters2.length() + " removed letters!");
         return false;
     }
-/
 }
